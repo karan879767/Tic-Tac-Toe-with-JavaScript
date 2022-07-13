@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergery Form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+        }
+
+        .outside {
+            background-color: rgb(242, 247, 201);
+            padding-top: 23px;
+            padding-bottom: 23px;
+            /* border: 1px solid grey; */
+        }
+
+        h1 {
+            font-size: 1.6em;
+            text-align: center;
+            /* text-transform: capitalize;/ */
+        }
+
+        form {
+            margin: 0 auto;
+            width: 80%;
+            padding: 1em;
+            border: 1px solid grey;
+            border-radius: 1em;
+        }
+
+        .form {
+            background-color: white;
+        }
+
+        legend {
+            font-weight: 690;
+        }
+
+        .color-outline {
+            margin-top: 1em;
+            border: 1px solid grey;
+            border-radius: .3em;
+        }
+
+        textarea {
+            width: 400px;
+            border: 1px solid grey;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: rgb(247, 89, 31);
+        }
+
+        textarea {
+            height: 5em;
+            vertical-align: top;
+            resize: vertical;
+        }
+
+        button {
+            margin: .5em;
+            font-size: 1em;
+            text-transform: capitalize;
+            color: white;
+            border: none;
+            border-radius: .2em;
+            padding: 5px;
+            background-color: red;
+
+        }
+
+        .botton {
+            text-align: center;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outside">
+        <form class="form" action="/my-headling-page">
+            <h1 id="title"> Application Form For Join NERT</h1>
+            <p id="discrip"> <b>Note:</b> Form is to be completed at atleast 21days prior to date</p>
+            <fieldset class="color-outline">
+                <legend>
+                    Personal Details
+                </legend>
+                <div>
+                    <label id="name-label" for="name">Name:</label>
+                    <input type="text" required name="user-name" id="name" placeholder="Enter Your Name">
+                </div>
+                <br>
+                <div>
+                    <label id="address-label" for="address">Address:</label>
+                    <input type="Address" required name="Address" id="address" placeholder="Enter address here">
+                </div>
+                <br>
+                <div>
+                    <label id="email-label" for="email">Email:</label>
+                    <input type="email" required name="email" id="Email" placeholder="Enter email here">
+                </div>
+                <br>
+                <div>
+                    <label id="number" for="pone-number">Phone number:</label>
+                    <input type="number" required name="number" id="Number" placeholder="Enter 10 digit number">
+                </div>
+                <br>
+                <div>
+                    <label id="iq" for="IQ">IQ:</label>
+                    <input type="number" required name="iq" id="iq" placeholder="Enter IQ here">
+                </div>
+                <br>
+                <div>
+                    <label id="gender" for="Gender">Gender:</label> <br>
+                    <input type="checkbox" name="mygender" id="gender"> Male <br>
+                    <input type="checkbox" name="mygender" id="gender">Female <br>
+                    <input type="checkbox" name="mygender" id="gender"> Other <br>
+                </div>
+                <br>
+                <div>
+                    <label id="Date" for="date">Date of Joining:</label>
+                    <input type="date" name="date" id="Date">
+                </div>
+            </fieldset>
+            <fieldset id="color-outline">
+                <legend>Check All That Apply</legend>
+                <div>
+                    <!-- <label for="Gender">Check All That Apply</label> <br> <br> -->
+                    <input type="checkbox" name="tattoo" id="tattoo"> I have tattoos and/or piercingd <br>
+                    <input type="checkbox"> You are experienced person<br>
+                    <input type="checkbox"> jon as a fresher <br>
+                    <input type="checkbox"> I work full-time <br>
+                    <input type="checkbox"> My parents are rich <br>
+                    <input type="checkbox"> More than 5 year experience <br>
+                </div>
+            </fieldset>
+            <fieldset id="color-outline">
+                <!-- <label for="political">Political Persuasion</label><br> -->
+                <legend>Political Persuasion</legend>
+                <div>
+                    <select name="education" id="education">
+                        <option value="Left Wing">Left Wing</option>
+                        <option value="Right Wing">Right Wing</option>
+                        <option value="conservative">conservative</option>
+                        <option value="nazi">nazi</option>
+                    </select> Education Level completed
+                    <select name="university" id="university">
+                        <option value="University">University</option>
+                        <option value="High School">High School</option>
+                        <option value="School">School</option>
+                        <option value="None">None</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset id="color-outline">
+                <legend>Essay Section</legend>
+                <div>
+                    <p class="discrip">In 50 words or more explain why you want to Join</p>
+                    <textarea name="area" id="freetext" cols="50" rows="3" placeholder="Enter Text Here"></textarea>
+                    <p class="discrip">Please upload contact details for 2 reference</p>
+                    <textarea name="area" id="freetext" cols="50" rows="3" placeholder="Enter Text Here"></textarea>
+                    <p class="discrip">Upload Police Clearance Certificate, Bank Statement and Medical Certificate here.
+                        <br> <button id="button">Attach Files</button>
+                    </p>
+                </div>
+            </fieldset> <br>
+            <div><button class="botton" type="submit">Send Your Application</button></div>
+        <!-- <fieldset>karan</fieldset> -->
+        </form>
+
+    </div>
+</body>
+
+</html>
