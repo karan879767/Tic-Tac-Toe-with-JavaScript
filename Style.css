@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Roboto:wght@100;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e098eb;
+}
+
+nav {
+    background-color: #540047;
+    color: white;
+    height: 100px;
+    font-size: 2vw;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+li:hover {
+    color: #d0f2cd;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.imgbox img {
+    width: 0;
+    transition: ease-in-out;
+}
+
+.gamecontainer {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.container {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Roboto', sans-serif;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgba(254, 152, 185, 74);
+}
+
+.info {
+    font-size: 25px;
+    color: #540047;
+}
+
+.gameInfo {
+    padding: 0 34px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.gameInfo h1 {
+    font-size: 2.5rem;
+    color: #540047;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+button {
+    margin: 0 23px;
+    padding: 6px 14px;
+    background: #e5c7e5;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.line {
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #540047;
+    transform: width 1s ease-in-out;
+}
+
+
+
+
+
+
+
+
+#leader {
+    width: 600px;
+    height: auto;
+}
+.row {
+    position: relative;
+    display: flex;
+    width: 162px;
+    height: 40px;
+    border-bottom: 1px solid #AFAFAF;
+    justify-content: center;
+    align-items: center;
+    margin: 23px
+}
+
+.name {
+    position: relative;
+    display: inline-block;
+    width: 75%;
+    line-height: 45px;
+}
+
+.score {
+    position: relative;
+    display: inline-block;
+    width: 25%;
+}
+
+.row:nth-child(1) {
+    background: gold;
+}
+
+.row:nth-child(2) {
+    background: #c0c0c0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 950px) {
+    .gamecontainer {
+        flex-wrap: wrap;
+    }
+
+    .gameIf {
+        margin-top: 34px;
+    }
+
+    .gameInfo h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 20w);
+        grid-template-rows: repeat(3, 20w);
+    }
+}
